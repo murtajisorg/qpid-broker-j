@@ -1,0 +1,178 @@
+<!--
+  ~ Licensed to the Apache Software Foundation (ASF) under one
+  ~ or more contributor license agreements.  See the NOTICE file
+  ~ distributed with this work for additional information
+  ~ regarding copyright ownership.  The ASF licenses this file
+  ~ to you under the Apache License, Version 2.0 (the
+  ~ "License"); you may not use this file except in compliance
+  ~ with the License.  You may obtain a copy of the License at
+  ~
+  ~   http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied.  See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+
+<div>
+    <div class="clear">
+      <div class="formLabel-labelCell tableContainer-labelCell">JDBC Url*:</div>
+      <div class="formLabel-controlCell tableContainer-valueCell">
+          <input type="text" id="editVirtualHost.connectionUrl"
+                          data-dojo-type="dijit/form/ValidationTextBox"
+                          data-dojo-props="
+                              name: 'connectionUrl',
+                              placeHolder: 'jdbc:provider:info',
+                              required: true,
+                              missingMessage: 'JDBC URL must be supplied',
+                              title: 'Enter JDBC URL'"/>
+      </div>
+    </div>
+    <div class="clear">
+        <div class="formLabel-labelCell tableContainer-labelCell">Username:</div>
+        <div class="formLabel-controlCell tableContainer-valueCell">
+            <input type="text" id="editVirtualHost.username"
+                   data-dojo-type="dijit/form/ValidationTextBox"
+                   data-dojo-props="
+                              name: 'username',
+                              placeHolder: 'username',
+                              required: false,
+                              missingMessage: 'Username must be supplied',
+                              title: 'Enter username'" />
+        </div>
+    </div>
+    <div class="clear">
+        <div class="formLabel-labelCell tableContainer-labelCell">Password:</div>
+        <div class="formLabel-controlCell tableContainer-valueCell">
+            <input type="password" id="editVirtualHost.password"
+                   data-dojo-type="dijit/form/ValidationTextBox"
+                   data-dojo-props="
+                              name: 'password',
+                              placeHolder: 'password',
+                              type: 'password',
+                              required: false,
+                              missingMessage: 'Password must be supplied',
+                              title: 'Enter password'" />
+        </div>
+    </div>
+    <div class="clear">
+      <div class="formLabel-labelCell tableContainer-labelCell">Connection Pool*:</div>
+      <div class="formLabel-controlCell tableContainer-valueCell">
+          <input type="text" id="editVirtualHost.connectionPoolType"
+                          data-dojo-type="dijit/form/FilteringSelect"
+                          data-dojo-props="
+                              name: 'connectionPoolType',
+                              required: true,
+                              missingMessage: 'Connection Pool type must be supplied',
+                              title: 'Select Connection Pool',
+                              placeHolder: 'Select pool type'" />
+      </div>
+    </div>
+
+    <div class="clear">
+        <div class="formLabel-labelCell">
+            <label for="editVirtualHost.keyStore">Key Store:</label>
+        </div>
+        <div class="formLabel-controlCell">
+            <select id="editVirtualHost.keyStore"
+                    data-dojo-type="dijit.form.FilteringSelect"
+                    data-dojo-props="
+                    name: 'keyStore',
+                    label: 'Key Store:',
+                    searchAttr: 'name',
+                    placeHolder: 'keystore',
+                    value: '',
+                    required: false,
+                    promptMessage: 'Keystore that provides the SSL certificate',
+                    title: 'Select the keystore that provides the SSL certificate'">
+            </select>
+        </div>
+    </div>
+
+    <div class="clear">
+        <div class="formLabel-labelCell tableContainer-labelCell">Keystore Path Property Name:</div>
+        <div class="formLabel-controlCell tableContainer-valueCell">
+            <input type="text" id="editVirtualHost.keyStorePathPropertyName"
+                   data-dojo-type="dijit/form/ValidationTextBox"
+                   data-dojo-props="
+                              name: 'keyStorePathPropertyName',
+                              placeHolder: 'keystore path property name',
+                              required: false,
+                              regExp: '[a-zA-Z_0-9-]*',
+                              promptMessage: 'Name of the database vendor specific keystore path property',
+                              title: 'Name of the database vendor specific keystore path property'" />
+        </div>
+    </div>
+
+    <div class="clear">
+        <div class="formLabel-labelCell tableContainer-labelCell">Keystore Password Property Name:</div>
+        <div class="formLabel-controlCell tableContainer-valueCell">
+            <input type="text" id="editVirtualHost.keyStorePasswordPropertyName"
+                   data-dojo-type="dijit/form/ValidationTextBox"
+                   data-dojo-props="
+                              name: 'keyStorePasswordPropertyName',
+                              placeHolder: 'keystore password property name',
+                              required: false,
+                              regExp: '[a-zA-Z_0-9-]*',
+                              promptMessage: 'Name of the database vendor specific keystore password property',
+                              title: 'Name of the database vendor specific keystore password property'" />
+        </div>
+    </div>
+
+    <div class="clear">
+        <div class="formLabel-labelCell">
+            <label for="editVirtualHost.trustStore">Trust Store:</label>
+        </div>
+        <div class="formLabel-controlCell">
+            <select id="editVirtualHost.trustStore"
+                    data-dojo-type="dijit.form.FilteringSelect"
+                    data-dojo-props="
+                    name: 'trustStore',
+                    label: 'Trust Store:',
+                    searchAttr: 'name',
+                    placeHolder: 'truststore',
+                    value: '',
+                    required: false,
+                    promptMessage: 'Trust store that records certificates',
+                    title: 'Select the trust store that will be used to record client certificates'">
+            </select>
+        </div>
+    </div>
+
+    <div class="clear">
+        <div class="formLabel-labelCell tableContainer-labelCell">Truststore Path Property Name:</div>
+        <div class="formLabel-controlCell tableContainer-valueCell">
+            <input type="text" id="editVirtualHost.trustStorePathPropertyName"
+                   data-dojo-type="dijit/form/ValidationTextBox"
+                   data-dojo-props="
+                              name: 'trustStorePathPropertyName',
+                              placeHolder: 'truststore path property name',
+                              required: false,
+                              regExp: '[a-zA-Z_0-9-]*',
+                              promptMessage: 'Name of the database vendor specific truststore path property',
+                              title: 'Name of the database vendor specific truststore path property'" />
+        </div>
+    </div>
+
+    <div class="clear">
+        <div class="formLabel-labelCell tableContainer-labelCell">Truststore Password Property Name:</div>
+        <div class="formLabel-controlCell tableContainer-valueCell">
+            <input type="text" id="editVirtualHost.trustStorePasswordPropertyName"
+                   data-dojo-type="dijit/form/ValidationTextBox"
+                   data-dojo-props="
+                              name: 'trustStorePasswordPropertyName',
+                              placeHolder: 'truststore password property name',
+                              required: false,
+                              regExp: '[a-zA-Z_0-9-]*',
+                              promptMessage: 'Name of the database vendor specific truststore password property',
+                              title: 'Name of the database vendor specific truststore password property'" />
+        </div>
+    </div>
+
+    <div class="clear"></div>
+    <div id="editVirtualHost.poolSpecificDiv"></div>
+
+</div>

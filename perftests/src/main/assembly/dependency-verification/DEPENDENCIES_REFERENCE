@@ -1,0 +1,97 @@
+#
+# Licensed to the Apache Software Foundation (ASF) under one
+# or more contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership.  The ASF licenses this file
+# to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+#
+
+#// ------------------------------------------------------------------
+# TRIMMED 3RD PARTY DEPENDENCY INFORMATION FOR MODIFICATION CHECKS
+#// ------------------------------------------------------------------
+
+Apache Qpid Broker-J Performance Tests
+
+
+From: 'an unknown organization'
+
+  - resilience4j (https://resilience4j.readme.io) io.github.resilience4j:resilience4j-core:jar:2.3.0
+    License: Apache-2.0  (https://github.com/resilience4j/resilience4j/blob/master/LICENSE.txt)
+
+  - resilience4j (https://resilience4j.readme.io) io.github.resilience4j:resilience4j-ratelimiter:jar:2.3.0
+    License: Apache-2.0  (https://github.com/resilience4j/resilience4j/blob/master/LICENSE.txt)
+
+  - IntelliJ IDEA Annotations (http://www.jetbrains.org) org.jetbrains:annotations:jar:13.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Kotlin Stdlib (https://kotlinlang.org/) org.jetbrains.kotlin:kotlin-stdlib:jar:1.9.0
+    License: The Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Kotlin Stdlib Common (https://kotlinlang.org/) org.jetbrains.kotlin:kotlin-stdlib-common:jar:1.9.0
+    License: The Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Kotlin Stdlib Jdk7 (https://kotlinlang.org/) org.jetbrains.kotlin:kotlin-stdlib-jdk7:jar:1.9.0
+    License: The Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Kotlin Stdlib Jdk8 (https://kotlinlang.org/) org.jetbrains.kotlin:kotlin-stdlib-jdk8:jar:1.9.0
+    License: The Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+From: 'Apache Software Foundation' (http://www.apache.org)
+
+  - JMS 1.1 (http://geronimo.apache.org/specs/geronimo-jms_1.1_spec) org.apache.geronimo.specs:geronimo-jms_1.1_spec:jar:1.1.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+From: 'FasterXML' (http://fasterxml.com/)
+
+  - Jackson-annotations (https://github.com/FasterXML/jackson) com.fasterxml.jackson.core:jackson-annotations:jar:2.19.2
+    License: The Apache Software License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Jackson-core (https://github.com/FasterXML/jackson-core) com.fasterxml.jackson.core:jackson-core:jar:2.19.2
+    License: The Apache Software License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - jackson-databind (https://github.com/FasterXML/jackson) com.fasterxml.jackson.core:jackson-databind:jar:2.19.2
+    License: The Apache Software License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+From: 'QOS.ch' (http://www.qos.ch)
+
+  - Logback Classic Module (http://logback.qos.ch/logback-classic) ch.qos.logback:logback-classic:jar:1.5.18
+    License: Eclipse Public License - v 1.0  (http://www.eclipse.org/legal/epl-v10.html)
+    License: GNU Lesser General Public License  (http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html)
+
+  - Logback Core Module (http://logback.qos.ch/logback-core) ch.qos.logback:logback-core:jar:1.5.18
+    License: Eclipse Public License - v 1.0  (http://www.eclipse.org/legal/epl-v10.html)
+    License: GNU Lesser General Public License  (http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html)
+
+  - SLF4J API Module (http://www.slf4j.org) org.slf4j:slf4j-api:jar:2.0.17
+    License: MIT  (https://opensource.org/license/mit)
+
+
+From: 'The Apache Software Foundation' (https://www.apache.org/)
+
+  - Apache HttpClient (https://hc.apache.org/httpcomponents-client-5.5.x/5.5/httpclient5/) org.apache.httpcomponents.client5:httpclient5:jar:5.5
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Apache HttpComponents Core HTTP/1.1 (https://hc.apache.org/httpcomponents-core-5.3.x/5.3.4/httpcore5/) org.apache.httpcomponents.core5:httpcore5:jar:5.3.4
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Apache HttpComponents Core HTTP/2 (https://hc.apache.org/httpcomponents-core-5.3.x/5.3.4/httpcore5-h2/) org.apache.httpcomponents.core5:httpcore5-h2:jar:5.3.4
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+
+
+
